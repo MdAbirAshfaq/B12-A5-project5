@@ -12,11 +12,23 @@
     height: 40px;
     border-radius: 40px;
 }
+.side-bar2{
+    background-color: #00A63E;
+    width: 80px;
+    display: flex;
+    padding: 10px;
+    justify-content: center;
+    height: 40px;
+    border-radius: 40px;
+}
 .Figure{
     border: 1px solid #5C5C5C10;
 }
 .ok{
     border: 2px solid red;
+}
+.ko{
+    border: 2px solid purple;
 }
 .banner{
     margin-top: 25px;
