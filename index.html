@@ -55,56 +55,175 @@
 
 </header>
 
-<main class="bg-[#41FF6B30]">
+<main class="bg-[#41FF6B30] w-full overflow-hidden ">
     <section class="flex justify-between w-[1530px] p-[30px]">
-        <div class="grid grid-cols-3 gap-[15px]">          
-            <div class="ok w-[320px] p-5 rounded-[12px] bg-white">
+        <div class="grid grid-cols-3 gap-[15px] card-section">          
+            <div class=" w-[320px] p-5 rounded-[12px] bg-white shadow-lg">
                 <div class="flex justify-between ">
                     <figure class=" bg-red-200 rounded-[12px] w-[40px] h-[40px] flex justify-center">
                         <img class="w-[30px] h-[30px]" src="Images/emergency.png" alt="">
                     </figure>
-                    <button id="heart" class=" btn btn-circle bg-white border-none">
+                    <button onclick="incrementCounter()" id="heart1" class=" btn btn-circle bg-white border-none">
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor" class="size-[1.2em]"><path stroke-linecap="round" stroke-linejoin="round" d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12Z" /></svg>
                     </button>
                 </div>
-                <h4 id="service-name" class="font-bold text-[20px]">National Emergency Number</h4>
+                <h4 id="service-name1" class="font-bold text-[20px]">National Emergency Number</h4>
                 <p class="font-normal text-[15px] text-[#5C5C5C]">National Emergency</p>
-                <h3 id="service-number" class="font-bold text-[25px] mt-[5px]">999</h3>
+                <h3 id="service-number1" class="font-bold text-[25px] mt-[5px]">999</h3>
                 <p class="text-[#5C5C5C] bg-[#5C5C5C20] w-[40px] h-[30px] rounded-full text-center">All</p> <br>
-                <button id="copy-number" class="btn w-[120px] "><i class="fa-regular fa-copy"></i>Copy</button>
-                <button id="call-number" class="btn btn-success btn-outline w-[140px] ml-[5px]"><i class="fa-solid fa-phone"></i>Call Button</button>
+                <button onclick="incrementCounterCopy()" id="copy-number1" class="btn w-[120px] "><i class="fa-regular fa-copy"></i>Copy</button>
+                <button id="call-number1" class="btn btn-success btn-outline w-[140px] ml-[5px]"><i class="fa-solid fa-phone"></i>Call Button</button>
             </div>
-            <div class="ok p-5 rounded-[12px]">
-                <figure class="flex justify-between ">
-                    <img class="w-[30px] h-[30px] bg-red-300 rounded-full" src="Images/emergency.png" alt="">
-                    <button class="btn btn-circle bg-white border-none">
+
+
+            <div class=" w-[320px] p-5 rounded-[12px] bg-white shadow-lg">
+                <div class="flex justify-between ">
+                    <figure class=" bg-blue-200 rounded-[12px] w-[40px] h-[40px] flex justify-center">
+                        <img class="w-[30px] h-[30px]" src="Images/police.png" alt="">
+                    </figure>
+                    <button onclick="incrementCounter()" id="heart2" class=" btn btn-circle bg-white border-none">
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor" class="size-[1.2em]"><path stroke-linecap="round" stroke-linejoin="round" d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12Z" /></svg>
                     </button>
-                </figure>
-                <h4 class="font-bold text-[20px]">National Emergency Number</h4>
-                <p class="font-normal text-[15px] text-[#5C5C5C]">National Emergency</p>
-                <h3 class="font-bold text-[25px] mt-[5px]">999</h3>
-                <p class="text-[#5C5C5C] bg-[#5C5C5C20] w-[40px] h-[30px] rounded-full text-center">All</p> <br>
-                <button class="btn w-[120px]"><i class="fa-regular fa-copy"></i>Copy</button>
-                <button class="btn btn-success btn-outline w-[120px]"><i class="fa-solid fa-phone"></i>Success</button>
+                </div>
+                <h4 id="service-name2" class="font-bold text-[20px]">Police Helpline Number</h4>
+                <p class="font-normal text-[15px] text-[#5C5C5C]">Police</p>
+                <h3 id="service-number2" class="font-bold text-[25px] mt-[5px]">999</h3>
+                <p class="text-[#5C5C5C] bg-[#5C5C5C20] w-[50px] h-[30px] rounded-full text-center">Police</p> <br>
+                <button onclick="incrementCounterCopy()" id="copy-number2" class="btn w-[120px] "><i class="fa-regular fa-copy"></i>Copy</button>
+                <button id="call-number2" class="btn btn-success btn-outline w-[140px] ml-[5px]"><i class="fa-solid fa-phone"></i>Call Button</button>
             </div>
-            <div class="ok p-5 rounded-[12px]">
-                <figure class="flex justify-between ">
-                    <img class="w-[30px] h-[30px] bg-red-300 rounded-full" src="Images/emergency.png" alt="">
-                    <button class="btn btn-circle bg-white border-none">
+
+
+            <div class=" w-[320px] p-5 rounded-[12px] bg-white shadow-lg">
+                <div class="flex justify-between ">
+                    <figure class=" bg-red-200 rounded-[12px] w-[40px] h-[40px] flex justify-center">
+                        <img class="w-[30px] h-[30px]" src="Images/fire-service.png" alt="">
+                    </figure>
+                    <button onclick="incrementCounter()" id="heart2" class=" btn btn-circle bg-white border-none">
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor" class="size-[1.2em]"><path stroke-linecap="round" stroke-linejoin="round" d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12Z" /></svg>
                     </button>
-                </figure>
-                <h4 class="font-bold text-[20px]">National Emergency Number</h4>
-                <p class="font-normal text-[15px] text-[#5C5C5C]">National Emergency</p>
-                <h3 class="font-bold text-[25px] mt-[5px]">999</h3>
-                <p class="text-[#5C5C5C] bg-[#5C5C5C20] w-[40px] h-[30px] rounded-full text-center">All</p> <br>
-                <button class="btn w-[120px]"><i class="fa-regular fa-copy"></i>Copy</button>
-                <button class="btn btn-success btn-outline w-[120px]"><i class="fa-solid fa-phone"></i>Success</button>
+                </div>
+                <h4 id="service-name3" class="font-bold text-[20px]">Fire Service Number</h4>
+                <p class="font-normal text-[15px] text-[#5C5C5C]">Fire Service</p>
+                <h3 id="service-number3" class="font-bold text-[25px] mt-[5px]">999</h3>
+                <p class="text-[#5C5C5C] bg-[#5C5C5C20] w-[50px] h-[30px] rounded-full text-center">Fire</p> <br>
+                <button onclick="incrementCounterCopy()" id="copy-number3" class="btn w-[120px] "><i class="fa-regular fa-copy"></i>Copy</button>
+                <button id="call-number3" class="btn btn-success btn-outline w-[140px] ml-[5px]"><i class="fa-solid fa-phone"></i>Call Button</button>
             </div>
+
+
+            <div class=" w-[320px] p-5 rounded-[12px] bg-white shadow-lg">
+                <div class="flex justify-between ">
+                    <figure class=" bg-red-200 rounded-[12px] w-[40px] h-[40px] flex justify-center">
+                        <img class="w-[30px] h-[30px]" src="Images/ambulance.png" alt="">
+                    </figure>
+                    <button onclick="incrementCounter()" id="heart2" class=" btn btn-circle bg-white border-none">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor" class="size-[1.2em]"><path stroke-linecap="round" stroke-linejoin="round" d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12Z" /></svg>
+                    </button>
+                </div>
+                <h4 id="service-name4" class="font-bold text-[20px]">Ambulance Service</h4>
+                <p class="font-normal text-[15px] text-[#5C5C5C]">Ambulance</p>
+                <h3 id="service-number4" class="font-bold text-[25px] mt-[5px]">1994-999999</h3>
+                <p class="text-[#5C5C5C] bg-[#5C5C5C20] w-[50px] h-[30px] rounded-full text-center">Health</p> <br>
+                <button onclick="incrementCounterCopy()" id="copy-number4" class="btn w-[120px] "><i class="fa-regular fa-copy"></i>Copy</button>
+                <button id="call-number4" class="btn btn-success btn-outline w-[140px] ml-[5px]"><i class="fa-solid fa-phone"></i>Call Button</button>
+            </div>
+
+
+            <div class=" w-[320px] p-5 rounded-[12px] bg-white shadow-lg">
+                <div class="flex justify-between ">
+                    <figure class=" bg-red-200 rounded-[12px] w-[40px] h-[40px] flex justify-center">
+                        <img class="w-[30px] h-[30px]" src="Images/emergency.png" alt="">
+                    </figure>
+                    <button onclick="incrementCounter()" id="heart2" class=" btn btn-circle bg-white border-none">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor" class="size-[1.2em]"><path stroke-linecap="round" stroke-linejoin="round" d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12Z" /></svg>
+                    </button>
+                </div>
+                <h4 id="service-name5" class="font-bold text-[20px]">Women & Child Helpline</h4>
+                <p class="font-normal text-[15px] text-[#5C5C5C]">Women & Child Helpline</p>
+                <h3 id="service-number5" class="font-bold text-[25px] mt-[5px]">109</h3>
+                <p class="text-[#5C5C5C] bg-[#5C5C5C20] w-[50px] h-[30px] rounded-full text-center">Help</p> <br>
+                <button onclick="incrementCounterCopy()" id="copy-number5" class="btn w-[120px] "><i class="fa-regular fa-copy"></i>Copy</button>
+                <button id="call-number5" class="btn btn-success btn-outline w-[140px] ml-[5px]"><i class="fa-solid fa-phone"></i>Call Button</button>
+            </div>
+
+
+            <div class=" w-[320px] p-5 rounded-[12px] bg-white shadow-lg">
+                <div class="flex justify-between ">
+                    <figure class=" bg-red-200 rounded-[12px] w-[40px] h-[40px] flex justify-center">
+                        <img class="w-[30px] h-[30px]" src="Images/emergency.png" alt="">
+                    </figure>
+                    <button onclick="incrementCounter()" id="heart2" class=" btn btn-circle bg-white border-none">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor" class="size-[1.2em]"><path stroke-linecap="round" stroke-linejoin="round" d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12Z" /></svg>
+                    </button>
+                </div>
+                <h4 id="service-name6" class="font-bold text-[20px]">Anti-Corruption Helpline</h4>
+                <p class="font-normal text-[15px] text-[#5C5C5C]">Anti-Corruption</p>
+                <h3 id="service-number6" class="font-bold text-[25px] mt-[5px]">106</h3>
+                <p class="text-[#5C5C5C] bg-[#5C5C5C20] w-[50px] h-[30px] rounded-full text-center">Govt.</p> <br>
+                <button onclick="incrementCounterCopy()" id="copy-number6" class="btn w-[120px] "><i class="fa-regular fa-copy"></i>Copy</button>
+                <button id="call-number6" class="btn btn-success btn-outline w-[140px] ml-[5px]"><i class="fa-solid fa-phone"></i>Call Button</button>
+            </div>
+
+
+            <div class=" w-[320px] p-5 rounded-[12px] bg-white shadow-lg">
+                <div class="flex justify-between ">
+                    <figure class=" bg-red-200 rounded-[12px] w-[40px] h-[40px] flex justify-center">
+                        <img class="w-[30px] h-[30px]" src="Images/emergency.png" alt="">
+                    </figure>
+                    <button onclick="incrementCounter()" id="heart2" class=" btn btn-circle bg-white border-none">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor" class="size-[1.2em]"><path stroke-linecap="round" stroke-linejoin="round" d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12Z" /></svg>
+                    </button>
+                </div>
+                <h4 id="service-name7" class="font-bold text-[20px]">Electricity  Outage</h4>
+                <p class="font-normal text-[15px] text-[#5C5C5C]">Electricity  Outage</p>
+                <h3 id="service-number7" class="font-bold text-[25px] mt-[5px]">16216</h3>
+                <p class="text-[#5C5C5C] bg-[#5C5C5C20] w-[50px] text-[14px] h-[30px] rounded-full text-center">Electricity</p> <br>
+                <button onclick="incrementCounterCopy()" id="copy-number7" class="btn w-[120px] "><i class="fa-regular fa-copy"></i>Copy</button>
+                <button id="call-number7" class="btn btn-success btn-outline w-[140px] ml-[5px]"><i class="fa-solid fa-phone"></i>Call Button</button>
+            </div>
+
+
+            <div class=" w-[320px] p-5 rounded-[12px] bg-white shadow-lg">
+                <div class="flex justify-between ">
+                    <figure class=" bg-red-200 rounded-[12px] w-[40px] h-[40px] flex justify-center">
+                        <img class="w-[30px] h-[30px]" src="Images/emergency.png" alt="">
+                    </figure>
+                    <button onclick="incrementCounter()" id="heart2" class=" btn btn-circle bg-white border-none">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor" class="size-[1.2em]"><path stroke-linecap="round" stroke-linejoin="round" d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12Z" /></svg>
+                    </button>
+                </div>
+                <h4 id="service-name8" class="font-bold text-[20px]">Brac Helpline</h4>
+                <p class="font-normal text-[15px] text-[#5C5C5C]">Brac</p>
+                <h3 id="service-number8" class="font-bold text-[25px] mt-[5px]">16445</h3>
+                <p class="text-[#5C5C5C] bg-[#5C5C5C20] w-[50px] h-[30px] rounded-full text-center">NGO</p> <br>
+                <button onclick="incrementCounterCopy()" id="copy-number8" class="btn w-[120px] "><i class="fa-regular fa-copy"></i>Copy</button>
+                <button id="call-number8" class="btn btn-success btn-outline w-[140px] ml-[5px]"><i class="fa-solid fa-phone"></i>Call Button</button>
+            </div>
+
+
+            <div class=" w-[320px] p-5 rounded-[12px] bg-white shadow-lg">
+                <div class="flex justify-between ">
+                    <figure class=" bg-red-200 rounded-[12px] w-[40px] h-[40px] flex justify-center">
+                        <img class="w-[30px] h-[30px]" src="Images/emergency.png" alt="">
+                    </figure>
+                    <button onclick="incrementCounter()" id="heart2" class=" btn btn-circle bg-white border-none">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor" class="size-[1.2em]"><path stroke-linecap="round" stroke-linejoin="round" d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12Z" /></svg>
+                    </button>
+                </div>
+                <h4 id="service-name9" class="font-bold text-[20px]">Bangladesh Railway Helpline</h4>
+                <p class="font-normal text-[15px] text-[#5C5C5C]">Bangladesh Railway</p>
+                <h3 id="service-number9" class="font-bold text-[25px] mt-[5px]">163</h3>
+                <p class="text-[#5C5C5C] bg-[#5C5C5C20] w-[50px] h-[30px] rounded-full text-center">Travel</p> <br>
+                <button onclick="incrementCounterCopy()" id="copy-number9" class="btn w-[120px] "><i class="fa-regular fa-copy"></i>Copy</button>
+                <button id="call-number9" class="btn btn-success btn-outline w-[140px] ml-[5px]"><i class="fa-solid fa-phone"></i>Call Button</button>
+            </div>
+
+
+            
         </div>
 
-        <div class="bg-white w-[400px]  p-[20px] ok">
+        <div class="bg-white w-[400px]  p-[20px] rounded-[15px] shadow-lg">
             <div class="flex justify-between">
 
                 <div class="flex gap-[10px] ">
